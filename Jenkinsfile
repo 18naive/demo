@@ -15,7 +15,6 @@ pipeline {
             steps {
                 sh '''
                 # 安装 Pipenv
-                python3 -m pip install --upgrade pip
                 pip install pipenv
                 
                 # 生成 requirements.txt
