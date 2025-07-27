@@ -14,9 +14,6 @@ pipeline {
         stage('Setup') {
             steps {
                 sh '''
-                # 安装 Pipenv
-                pip install pipenv
-                
                 # 生成 requirements.txt
                 pipenv lock -r > requirements.txt
                 '''
