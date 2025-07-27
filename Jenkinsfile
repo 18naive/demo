@@ -11,15 +11,6 @@ pipeline {
             }
         }
         
-        stage('Setup') {
-            steps {
-                sh '''
-                # 生成 requirements.txt
-                pipenv lock -r > requirements.txt
-                '''
-            }
-        }
-        
         stage('Build Docker Image') {
             steps {
                 script {
