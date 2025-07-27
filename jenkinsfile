@@ -4,6 +4,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                sh '''
+                echo "开始拉取代码..."
+                '''
                 git branch: 'main', url: 'https://github.com/18naive/demo.git'
             }
         }
