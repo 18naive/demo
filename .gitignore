@@ -1,0 +1,59 @@
+# === Pipenv 相关 ===
+# 虚拟环境目录（推荐忽略整个目录）
+.venv/
+venv/
+
+# Pipenv 自动生成的文件（安全凭证）
+.pypirc
+
+# === Python 通用 ===
+# 字节码缓存
+__pycache__/
+*.py[cod]
+
+# 编译文件
+*.so
+*.egg-info/
+dist/
+build/
+
+# 单元测试/覆盖率输出
+.coverage
+htmlcov/
+.pytest_cache/
+test-results.xml
+
+# === 环境变量 ===
+# 敏感环境文件（永远不要提交！）
+.env
+.secrets
+.env.local
+
+# === 编辑器/IDE ===
+# VSCode
+.vscode/
+.vscode/settings.json
+
+# PyCharm/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# === 日志文件 ===
+*.log
+logs/
+
+# === 其他 ===
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
